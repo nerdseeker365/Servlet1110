@@ -1,0 +1,34 @@
+
+<h1 style="color:red;text-align:center">Working with multiple submit Buttons and hyperlinks</h1>
+
+<form name="frm" action="processurl" method="POST">
+    value1:: <input type="text" name="t1"><br>
+    value2:: <input type="text" name="t2"><br>
+    <input type="submit"   value="sum" onClick="isAdd()">
+    <input type="submit"    value="substract" onClick="isSub()">
+    <input type="submit"    value="multiply" onClick="isMul()">
+    <input type="hidden" name="source"/>
+    <br><br>
+    <a href="processurl?source=link1">Get System Props</a>
+    <a href="processurl?source=link2">System Date</a> 
+</form>
+  <script language="JavaScript">
+     function  isAdd(){
+    	  //change hidden box value
+    	  frm.source.value="btn1";
+    	  return true;
+     }
+     
+     function  isSub(){
+   	  //change hidden box value
+   	  frm.source.value="btn2";
+   	  return true;
+    }
+     
+     function  isMul(){
+      	  //change hidden box value
+      	  frm.source.value="btn3";
+      	  return true;
+       }
+  
+  </script>

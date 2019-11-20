@@ -1,0 +1,1 @@
+SQL> create table PersonalProfile(pname varchar2(20),page number(5),ms varchar2(6),f2val1 varchar2(30),f2val2 varchar2(30));

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>nit</short-name>
+    <uri>http://nit.com</uri>
+    
+    <tag>
+      <description>simple tag</description>
+      <name>label</name>
+      <tag-class>com.nt.tags.LabelTag</tag-class>
+      <body-content>empty</body-content>
+    </tag>
+    
+    <tag>
+       <description>prime tag</description>
+        <name>prime</name>
+        <tag-class>com.nt.tags.PrimeTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>n</name>
+            <required>false</required>
+        </attribute>
+    </tag>
+    
+    <tag>
+       <description>display tag</description>
+       <name>display</name>
+       <tag-class>com.nt.tags.DisplayTag</tag-class>
+       <body-content>JSP</body-content>
+       <attribute>
+          <name>font</name>
+          <required>true</required>
+       </attribute>
+       <attribute>
+           <name>size</name>
+           <required>false</required>
+       </attribute>
+       
+    </tag>
+    
+    
+     
+     
+    </taglib>

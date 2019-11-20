@@ -1,0 +1,54 @@
+
+
+ <h1 style="color:red;text-align:center">Book search  Project</h1>
+ 
+
+ <form   name="frm" method="POST">
+ <table border="1" align="center"  bgcolor="cyan">
+      <tr>
+         <th> Select Book Category:: </th>
+         <th> <select name="category"  >
+                       <option value="">--select--</option>
+                       <option value="java"> JAVA Package </option>
+                       <option value=".net"> .NET Package </option>
+                       <option value="php"> PHP Package </option>
+                  </select>
+        </tr>
+        <tr>
+            <td><button onclick="isHtml()" >HTML output </button> </td>
+            <td><button onclick="isExcel()">Excel output </button> </td>
+        </tr>
+        <tr>
+           <td colspan="2"> <span id="categoryError" style='color:red'></span></td>
+        </tr>
+ </table>
+                 <input type="hidden" name="source"/>
+ </form>
+ 
+   <script languge="JavaScript">
+       function isHtml(){
+         //set hidden box value with "html"
+         frm. source.value="html";
+         validate();
+       }
+       
+       function isExcel(){
+         //set hidden box value with "html"
+         frm. source.value="excel";
+         validate();
+       }
+       
+       function validate(){
+            //validation logic
+            if(frm.category.selectedIndex==0){
+              document.getElementById("categoryError").innerHTML="Select Category";
+            }
+            else{
+               frm.action="controller";
+                frm.submit();
+                return true;
+            }
+       }
+   </script>
+   
+    

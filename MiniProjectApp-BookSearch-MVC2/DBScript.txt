@@ -1,0 +1,9 @@
+SQL> desc BOOK_DETAILS;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BOOKID                                    NOT NULL NUMBER(5)
+ BOOKNAME                                           VARCHAR2(20)
+ AUTHORNAME                                         VARCHAR2(20)
+ STATUS                                             VARCHAR2(20)
+ PRICE                                              NUMBER(10,2)
+ CATEGORY                                           VARCHAR2(10)

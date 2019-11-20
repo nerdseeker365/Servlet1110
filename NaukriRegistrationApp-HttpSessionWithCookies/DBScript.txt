@@ -1,0 +1,7 @@
+SQL> create table naukri_jobseeker(jsId number(5) primary key,name varchar2(20),age number(2),addrs varchar2(20),skill varchar2(20),experience number(2),expSal number(10),preLoc varchar2(15));
+
+Table created.
+
+SQL> create sequence jsId_seq start with 1000 increment by 1;
+
+Sequence created.

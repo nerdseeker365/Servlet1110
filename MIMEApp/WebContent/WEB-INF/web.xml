@@ -1,0 +1,78 @@
+<web-app>
+   <!--SErvlet Details cfg -->
+   <!--SErvlet Details cfg -->
+    <servlet>
+         <servlet-name>xml</servlet-name>
+		 <servlet-class>com.nt.servlet.XmlServlet</servlet-class>
+		 <load-on-startup>30</load-on-startup>
+	</servlet>
+	<!--Servlet mapping cfg -->
+	<servlet-mapping>
+        <servlet-name>xml</servlet-name>
+		
+		<url-pattern>/test2</url-pattern>
+	</servlet-mapping>
+    <servlet>
+         <servlet-name>html</servlet-name>
+		 <servlet-class>com.nt.servlet.HtmlServlet</servlet-class>
+		 <load-on-startup>10</load-on-startup>
+	</servlet>
+	<!--Servlet mapping cfg -->
+	<servlet-mapping>
+        <servlet-name>html</servlet-name>
+		<url-pattern>/test1</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	 <!--SErvlet Details cfg -->
+    <servlet>
+         <servlet-name>word</servlet-name>
+		 <servlet-class>com.nt.servlet.WordServlet</servlet-class>
+		  <load-on-startup>10</load-on-startup>
+	</servlet>
+	<!--Servlet mapping cfg -->
+	<servlet-mapping>
+        <servlet-name>word</servlet-name>
+		<url-pattern>/wordurl</url-pattern>
+	</servlet-mapping>
+
+ <!--SErvlet Details cfg -->
+    <servlet>
+         <servlet-name>excel</servlet-name>
+		 <servlet-class>com.nt.servlet.ExcelServlet</servlet-class>
+		 <load-on-startup>10</load-on-startup>
+	</servlet>
+	<!--Servlet mapping cfg -->
+	<servlet-mapping>
+        <servlet-name>excel</servlet-name>
+		<url-pattern>/excelurl</url-pattern>
+	</servlet-mapping>
+
+ 
+
+	<!--SErvlet Details cfg -->
+    <servlet>
+         <servlet-name>lc</servlet-name>
+		 <servlet-class>com.nt.servlet.LcTestServlet</servlet-class>
+		 <init-param>
+              <param-name>dbuser</param-name>
+			  <param-value>system</param-value>
+		 </init-param>
+		 <init-param>
+              <param-name>dbpwd</param-name>
+			  <param-value>tiger</param-value>
+		 </init-param>
+
+		 <load-on-startup>10</load-on-startup>
+	</servlet>
+	<!--Servlet mapping cfg -->
+	<servlet-mapping>
+        <servlet-name>lc</servlet-name>
+		<url-pattern>/lcurl</url-pattern>
+	</servlet-mapping>
+  <welcome-file-list>
+      <welcome-file>abc.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

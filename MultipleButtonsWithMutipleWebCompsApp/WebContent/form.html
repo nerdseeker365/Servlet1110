@@ -1,0 +1,19 @@
+
+<h1 style="color:red;text-align:center">Working with Multiple Submit Buttons with Multiple Web Comps</h1>
+
+
+<form name="frm"  method="POST">
+    value :: <input type="text" name="t1"><br>
+    <input type="button"  value="square" onclick="send(this.value)">
+    <input type="button"  value="cube" onclick="send(this.value)">
+</form>
+<script language="JavaScript">
+   function  send(cap){
+	   if(cap=="square")
+		   frm.action="squrl";
+	   else
+		   frm.action="cubeurl";
+	   
+	   frm.submit();
+   }
+</script>
